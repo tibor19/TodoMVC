@@ -18,17 +18,22 @@ namespace TodoMVCKoDurandalBreeze
                 "~/Scripts/knockout.validation.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/Scripts/app/ajaxPrefilters.js",
-                "~/Scripts/app/app.bindings.js",
-                "~/Scripts/app/app.datamodel.js",
-                "~/Scripts/app/app.viewmodel.js",
-                "~/Scripts/app/home.viewmodel.js",
-                "~/Scripts/app/login.viewmodel.js",
-                "~/Scripts/app/register.viewmodel.js",
-                "~/Scripts/app/registerExternal.viewmodel.js",
-                "~/Scripts/app/manage.viewmodel.js",
-                "~/Scripts/app/userInfo.viewmodel.js",
-                "~/Scripts/app/_run.js"));
+                "~/app/ajaxPrefilters.js",
+                "~/app/app.bindings.js",
+                "~/app/app.datamodel.js",
+                "~/app/app.viewmodel.js",
+                "~/app/home.viewmodel.js",
+                "~/app/login.viewmodel.js",
+                "~/app/register.viewmodel.js",
+                "~/app/registerExternal.viewmodel.js",
+                "~/app/manage.viewmodel.js",
+                "~/app/userInfo.viewmodel.js",
+                "~/app/_run.js"));
+            bundles.Add(new ScriptBundle("~/bundles/todoApp").Include(
+                "~/app/todoApp/todoItem.js",
+                "~/app/todoApp/todoViewModel.js",
+                "~/app/todoApp/_run.js"));
+
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

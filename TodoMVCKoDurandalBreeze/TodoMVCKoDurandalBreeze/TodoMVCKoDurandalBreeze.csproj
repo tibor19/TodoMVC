@@ -216,6 +216,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\todoApp\todoItem.js" />
+    <Content Include="App\todoApp\todoViewModel.js" />
+    <Content Include="App\todoApp\_run.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\bootstrap.css" />
@@ -249,16 +252,16 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Scripts\app\_run.js" />
-    <Content Include="Scripts\app\ajaxPrefilters.js" />
-    <Content Include="Scripts\app\app.datamodel.js" />
-    <Content Include="Scripts\app\app.viewmodel.js" />
-    <Content Include="Scripts\app\home.viewmodel.js" />
-    <Content Include="Scripts\app\login.viewmodel.js" />
-    <Content Include="Scripts\app\manage.viewmodel.js" />
-    <Content Include="Scripts\app\register.viewmodel.js" />
-    <Content Include="Scripts\app\registerExternal.viewmodel.js" />
-    <Content Include="Scripts\app\userInfo.viewmodel.js" />
+    <Content Include="App\_run.js" />
+    <Content Include="App\ajaxPrefilters.js" />
+    <Content Include="App\app.datamodel.js" />
+    <Content Include="App\app.viewmodel.js" />
+    <Content Include="App\home.viewmodel.js" />
+    <Content Include="App\login.viewmodel.js" />
+    <Content Include="App\manage.viewmodel.js" />
+    <Content Include="App\register.viewmodel.js" />
+    <Content Include="App\registerExternal.viewmodel.js" />
+    <Content Include="App\userInfo.viewmodel.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\_Home.cshtml" />
     <Content Include="Views\Home\_Login.cshtml" />

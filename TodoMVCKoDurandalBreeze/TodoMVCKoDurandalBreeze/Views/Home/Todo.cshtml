@@ -5,25 +5,34 @@
 @section Styles{
     @Styles.Render("~/Content/todoApp")
 }
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/todoApp")
+    @Scripts.Render("~/bundles/bootstrap")
+}
+
 <h2>Todo</h2>
 
 <section id="todoapp">
     <header id="header">
         <h1>todos</h1>
-        <input id="new-todo" autofocus="" placeholder="What needs to be done?">
+        <input id="new-todo" autofocus="" placeholder="What needs to be done?" data-bind="value: currentItem" />
+        <button data-bind='click: addItem'>Add</button>
     </header>
     <section id="main">
         <input id="toggle-all" type="checkbox">
         <label for="toggle-all">Mark all as complete</label>
-        <ul id="todo-list">
-            <li class="completed">
+        <ul id="todo-list" data-bind="foreach: todoList">
+            <li>
                 <div class="view">
-                    <input class="toggle" type="checkbox">
-                    <label>Completed</label>
-                    <button class="destroy"></button>
+                    <input class="toggle" type="checkbox" data-bind="checked: completed">
+                    <label data-bind="text: item"></label>
+                    <button class="destroy" data-bind="click: $parent.deleteItem"></button>
                 </div>
             </li>
-            <li class="">
+            @*<li class="">
                 <div class="view">
                     <input class="toggle" type="checkbox">
                     <label>Abc</label>
@@ -32,7 +41,7 @@
             </li>
             <li class="editing">
                 <input class="edit">
-            </li>
+            </li>*@
         </ul>
     </section>
     <footer id="footer" >
