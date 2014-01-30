@@ -11,5 +11,9 @@ namespace TodoMVCKoDurandalBreeze.Controllers
         {
             return View();
         }
+        public ActionResult Todo()
+        {
+            return View();
+        }
     }
 }
